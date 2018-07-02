@@ -4,6 +4,7 @@ var li = list.getElementsByTagName('li');
 var addButton = document.getElementById('addButton');
 
 list.addEventListener('click', activeItem);
+list.addEventListener('dblclick', editItem);
 
 function activeItem(event) {
   if (event.target.nodeName == "LI") {
@@ -13,6 +14,11 @@ function activeItem(event) {
     };
     event.target.setAttribute('class', 'active');
   }
+}
+
+function editItem(event) {
+  var txt = prompt("Change this item");
+  event.target.innerText = txt;
 }
 
 addButton.addEventListener('click', function() {
