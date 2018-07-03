@@ -15,4 +15,9 @@ li {
   padding: 5px 0;
 }
 
+#h1con {
+  height: 50px;
+  width: 100%;
+}
+
 .active{ background: #abc }

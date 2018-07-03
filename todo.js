@@ -17,7 +17,8 @@ function activeItem(event) {
 }
 
 function editItem(event) {
-  var txt = prompt("Change this item");
+  var original = event.target.innerText;
+  var txt = prompt("Change item : " + original);
   event.target.innerText = txt;
 }
 
